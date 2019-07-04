@@ -18,6 +18,7 @@ Plug 'ctrlpvim/ctrlp.vim' "I didn't like fzf very much, so trying out ctrlp
 Plug 'tpope/vim-surround' "Easily create and delete surrounds (brackets, quotes)
 Plug 'Yggdroot/indentLine' "Creates the vertical bars showing start and end of functions
 Plug 'junegunn/goyo.vim' "Allows for much simpler text writing in vim (for writing papers, not code) 
+Plug 'yuttie/comfortable-motion.vim' "Allows for much nicer scrolling inside vim
 
 
 call plug#end()
@@ -31,6 +32,12 @@ let g:indentLine_enabled = 1 "Make sure the lines are always enabled
 
 let g:ctrlp_map = '<leader>c' " Change my keybind for ctrlp to be <leader>c
 let g:ctrlp_cmd = 'CtrlP'
+
+
+" Setup the natural scrolling for the mousewheel in vim
+set mouse=a
+noremap <silent> <ScrollWheelDown> :call comfortable_motion#flick(40)<CR>
+noremap <silent> <ScrollWheelUp> :call comfortable_motion#flick(-40)<CR>
 
 map <leader>n :NERDTreeToggle<CR>
 
