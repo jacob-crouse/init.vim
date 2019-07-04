@@ -17,6 +17,7 @@ Plug 'vim-airline/vim-airline' "Adds the colorful bar at the bottom of the scree
 Plug 'ctrlpvim/ctrlp.vim' "I didn't like fzf very much, so trying out ctrlp 
 Plug 'tpope/vim-surround' "Easily create and delete surrounds (brackets, quotes)
 Plug 'Yggdroot/indentLine' "Creates the vertical bars showing start and end of functions
+Plug 'junegunn/goyo.vim' "Allows for much simpler text writing in vim (for writing papers, not code) 
 
 
 call plug#end()
