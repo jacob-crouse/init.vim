@@ -91,4 +91,4 @@ if maparg('<C-L>', 'n') ==# ''
 endif
 
 " Search and Replace
-nmap <Leader>s :%s//g<Left><Left>
+nmap <Leader>s :%s///g<Left><Left><Left>
